@@ -1,0 +1,34 @@
+.navbar {
+    background: #09184f;
+    display: flex;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    .nav-logo {
+        margin-right: auto;
+        margin-left: 1.5em;
+        cursor: pointer;
+        .logo{
+            width: 60px;
+        }
+    }
+    .nav-list {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        margin: 1.2em;
+        .item {
+            color: #ffca0a;
+            text-decoration: none;
+            margin: 1rem;
+        }
+    }
+}
+
+.fa-shopping-cart {
+    margin-right: 0.5em;
+    color: #ffca0a;
+    cursor: pointer;
+}
+
