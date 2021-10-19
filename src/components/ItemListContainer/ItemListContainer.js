@@ -1,29 +1,14 @@
-import { useState } from "react";
-const ItemListContainer = (props) => {
-    const [count, setCount] = useState(0);
+import ItemCount from "../ItemCount/ItemCount"
 
-    const add = () =>{
-        setCount(count+1);
-    }
-
-    const remove = () =>{
-        if(count > 0){
-            setCount(count-1);
-        }else{
-
-        }
-    }
-
+const ItemListContainer = () => {
     return (
-        <div style={{textAlign:'center'}}>
-            <div style={{marginTop:'6rem'}}>
-                <button onClick={remove}>-</button>
-                <span>Items: {count}</span>
-                <button onClick={add}>+</button>
-            </div>
+        <div>
+            <h1>Remera Boca</h1>
             <img src="remera.png" alt="remera" />
+            <ItemCount/>
         </div>
     )
 }
+
 
 export default ItemListContainer;
