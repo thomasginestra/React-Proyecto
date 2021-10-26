@@ -1,0 +1,59 @@
+.container-articles {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 8rem auto 2rem auto;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    max-width: 1366px;
+    img {
+    width: 100%;
+    margin: auto;
+    padding: 10px;
+    }
+}
+
+.card {
+    width: 20%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: 0.4s;
+    background-color: #fff;
+}
+
+.sub-card {
+    padding: 20px 15px 10px 15px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    h1 {
+        text-align: center;
+    }
+}
+
+.card-title {
+    width: 100%;
+    display: block;
+    text-decoration: none;
+    font-size: 1.2rem;
+
+}
+
+.card-category {
+    font-size: 14px;
+    color: rgb(44, 44, 44);
+}
+
+.card-price{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.card-price-monto {
+    font-size: 1.5rem;
+    width: 100%;
+    color: #09184f;
+    padding: 10px 0;
+    font-weight: 600;
+}

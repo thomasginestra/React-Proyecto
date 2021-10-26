@@ -1,14 +1,12 @@
-import ItemCount from "../ItemCount/ItemCount"
+import ItemList from "../ItemList/ItemList";
+import Productos from "../Item/products.json";
 
-const ItemListContainer = () => {
-    return (
-        <div>
-            <h1>Remera Boca</h1>
-            <img src="remera.png" alt="remera" />
-            <ItemCount/>
+    const ItemListContainer = ({ greeting }) => {
+        return (
+        <div className="container-articles">
+            {Productos ? Productos.map(producto => <ItemList items={producto} key={producto.id}/>) : "Loading..."}
         </div>
-    )
-}
-
+        );
+    };
 
 export default ItemListContainer;

@@ -1,0 +1,50 @@
+[
+    {
+        "name" : "Remera Xeneize",
+        "price" : "1000",
+        "category" : "remera mujer" ,
+        "imgSrc" : "assets/media/remera1.jpg"
+    },
+    {
+        "name" : "Remera Unico Grande",
+        "price" : "700",
+        "category" : "remera unisex" ,
+        "imgSrc" : "assets/media/remera2.jpg"
+    },
+    {
+        "name" : "Remera Estrellas",
+        "price" : "500",
+        "category" : "remera mujer" ,
+        "imgSrc" : "assets/media/remera3.jpg"
+    },
+    {
+        "name" : "Remera Jn12",
+        "price" : "700",
+        "category" : "remera hombre" ,
+        "imgSrc" : "assets/media/remera4.jpg"
+    },
+    {
+        "name" : "Remera La mitad+1",
+        "price" : "500",
+        "category" : "remera mujer" ,
+        "imgSrc" : "assets/media/remera5.jpg"
+    },
+    {
+        "name" : "Remera Boca",
+        "price" : "400",
+        "category" : "remera hombre" ,
+        "imgSrc" : "assets/media/remera6.jpg"
+    },
+    {
+        "name" : "Remera XNZS",
+        "price" : "400",
+        "category" : "remera hombre" ,
+        "imgSrc" : "assets/media/remera7.jpg"
+    },
+    {
+        "name" : "Campera Boca",
+        "price" : "1600",
+        "category" : "campera hombre" ,
+        "imgSrc" : "assets/media/remera8.png"
+    }
+]

@@ -1,59 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-.navbar {
-  background: #09184f;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 80px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 1rem;
-}
-
-.navbar .nav-logo {
-  margin-right: auto;
-  margin-left: 1.5em;
-  cursor: pointer;
-}
-
-.navbar .nav-logo .logo {
-  width: 60px;
-}
-
-.navbar .nav-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  list-style: none;
-  margin: 1.2em;
-}
-
-.navbar .nav-list .item {
-  color: #ffca0a;
-  text-decoration: none;
-  margin: 1rem;
-}
-
-.fa-shopping-cart {
-  margin-right: 0.5em;
-  color: #ffca0a;
-  cursor: pointer;
-}
-
 .container-articles {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -127,9 +71,4 @@
   padding: 10px 0;
   font-weight: 600;
 }
-
-.App {
-  text-align: center;
-  font-family: "Montserrat", sans-serif;
-}
-/*# sourceMappingURL=App.css.map */
+/*# sourceMappingURL=ItemListContainer.css.map */
