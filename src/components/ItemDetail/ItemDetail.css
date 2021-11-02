@@ -1,0 +1,29 @@
+.itemDetail {
+    display: flex;
+    border: solid 1px black;
+    margin: 1rem;
+}
+    .itemDetail img {
+    width: 250px;
+}
+
+.itemDetailContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.addToCart {
+    width: 150px;
+    margin: auto;
+}
+
+.card-details{
+    display: flex;
+    margin: auto;
+    width: 80%;
+    height: 200px;
+}
+
+.card-img {
+    width: 200px;
+}

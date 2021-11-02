@@ -1,0 +1,9 @@
+.container-card-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-title-details {
+    font-size: 24px;
+    margin-bottom: 2em;
+}

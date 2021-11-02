@@ -1,32 +1,23 @@
-import { useEffect, useState } from "react";
-import Productos from "./products.json";
+import ItemCount from '../ItemCount/ItemCount';
 
-const Item = ({ item }) => {
-    const [products, setProducts] = useState ([]);
 
-    const getData = (data) =>
-    new Promise((resolve, reject) => {
-        setTimeout(() => {
-            if (data) {
-                resolve(data);
-            } else {
-                reject("ERROR: Reject");
-            }
-        }, 3000);
-    });
 
-    console.log(products);
+const Item = ({ productos }) => {
 
-    useEffect(() => {
-        getData(products)
-        .then((res) => setProducts(res))
-        .catch((err) => console.log(err));
-    }, [])
-
-    return(
+    return (
         <>
+            <div className="cardComponent">
+                <div className="imgCard">
+                    <img src={productos.img} alt="imagen de prueba" />
+                </div>
+                <h3>{productos.name}</h3>
+                <p>{productos.price}</p>
+                <ItemCount/>
+                <div className="addToCart">Agregar al carrito</div>
+                <button>Ver detalles</button>
+            </div>
         </>
-    )
-};
+    );
+}
 
 export default Item;
