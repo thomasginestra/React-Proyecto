@@ -2,8 +2,8 @@
     "version": 3,
     "mappings": "",
     "sources": [
-        "ItemListContainer.scss"
+        "ItemDetailContainer.scss"
     ],
     "names": [],
-    "file": "ItemListContainer.css"
+    "file": "ItemDetailContainer.css"
 }

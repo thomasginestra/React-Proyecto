@@ -11,10 +11,12 @@ function App() {
       <Navbar />
       <Switch>
         <Route exact path="/">
-        <ItemListContainer />
-        <ItemDetailContainer/>
-        </Route>{" "}
-      </Switch>{" "}
+          <ItemListContainer />
+        </Route>
+        <Route exact path="/item/:itemId">
+          <ItemDetailContainer />
+        </Route>
+      </Switch>
     </BrowserRouter>
   );
 }

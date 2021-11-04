@@ -2,6 +2,7 @@
     {
         "name" : "Remera Xeneize",
         "price" : "1000",
+        "id" : 1,
         "category" : "remera mujer" ,
         "img" : "assets/media/remera1.jpg",
         "description" : "La remera es una prenda básica de todos los días y muy versatil. La podés usar de entrecasa, en el trabajo debajo de la camisa, con unos jeans o bermudas para salir a comer un brunch un domingo y también para salir a la noche. Por eso necesitás una camiseta elegante, de la más alta calidad y que se adapte a vos."
@@ -9,6 +10,7 @@
     {
         "name" : "Remera Unico Grande",
         "price" : "700",
+        "id" : 2,
         "category" : "remera unisex" ,
         "img" : "assets/media/remera2.jpg",
         "description" : "La remera es una prenda básica de todos los días y muy versatil. La podés usar de entrecasa, en el trabajo debajo de la camisa, con unos jeans o bermudas para salir a comer un brunch un domingo y también para salir a la noche. Por eso necesitás una camiseta elegante, de la más alta calidad y que se adapte a vos."
@@ -16,6 +18,7 @@
     {
         "name" : "Remera Estrellas",
         "price" : "500",
+        "id" : 3,
         "category" : "remera mujer" ,
         "img" : "assets/media/remera3.jpg",
         "description" : "La remera es una prenda básica de todos los días y muy versatil. La podés usar de entrecasa, en el trabajo debajo de la camisa, con unos jeans o bermudas para salir a comer un brunch un domingo y también para salir a la noche. Por eso necesitás una camiseta elegante, de la más alta calidad y que se adapte a vos."
@@ -23,6 +26,7 @@
     {
         "name" : "Remera Jn12",
         "price" : "700",
+        "id" : 4,
         "category" : "remera hombre" ,
         "img" : "assets/media/remera4.jpg",
         "description" : "La remera es una prenda básica de todos los días y muy versatil. La podés usar de entrecasa, en el trabajo debajo de la camisa, con unos jeans o bermudas para salir a comer un brunch un domingo y también para salir a la noche. Por eso necesitás una camiseta elegante, de la más alta calidad y que se adapte a vos."
@@ -30,6 +34,7 @@
     {
         "name" : "Remera La mitad+1",
         "price" : "500",
+        "id" : 5,
         "category" : "remera mujer" ,
         "img" : "assets/media/remera5.jpg",
         "description" : "La remera es una prenda básica de todos los días y muy versatil. La podés usar de entrecasa, en el trabajo debajo de la camisa, con unos jeans o bermudas para salir a comer un brunch un domingo y también para salir a la noche. Por eso necesitás una camiseta elegante, de la más alta calidad y que se adapte a vos."
@@ -37,6 +42,7 @@
     {
         "name" : "Remera Boca",
         "price" : "400",
+        "id" : 6,
         "category" : "remera hombre" ,
         "img" : "assets/media/remera6.jpg",
         "description" : "La remera es una prenda básica de todos los días y muy versatil. La podés usar de entrecasa, en el trabajo debajo de la camisa, con unos jeans o bermudas para salir a comer un brunch un domingo y también para salir a la noche. Por eso necesitás una camiseta elegante, de la más alta calidad y que se adapte a vos."
@@ -44,6 +50,7 @@
     {
         "name" : "Remera XNZS",
         "price" : "400",
+        "id" : 7,
         "category" : "remera hombre" ,
         "img" : "assets/media/remera7.jpg",
         "description" : "La remera es una prenda básica de todos los días y muy versatil. La podés usar de entrecasa, en el trabajo debajo de la camisa, con unos jeans o bermudas para salir a comer un brunch un domingo y también para salir a la noche. Por eso necesitás una camiseta elegante, de la más alta calidad y que se adapte a vos."
@@ -51,6 +58,7 @@
     {
         "name" : "Campera Boca",
         "price" : "1600",
+        "id" : 8,
         "category" : "campera hombre" ,
         "img" : "assets/media/remera8.png",
         "description" : "La remera es una prenda básica de todos los días y muy versatil. La podés usar de entrecasa, en el trabajo debajo de la camisa, con unos jeans o bermudas para salir a comer un brunch un domingo y también para salir a la noche. Por eso necesitás una camiseta elegante, de la más alta calidad y que se adapte a vos."

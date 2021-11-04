@@ -1,28 +1,31 @@
-import './ItemDetail.css';
-import ItemCount from '../ItemCount/ItemCount';
+import "./ItemDetail.css";
+import ItemCount from "../ItemCount/ItemCount";
+import { Link } from "react-router-dom";
 
-
-
-    const ItemDetail = ({ item }) => {
-        return (
-        <>
-            <div className="card-details">
-            {item ? (
-                <>
-                <img className="card-img" src={item.img} alt="" />
-                <div className="sub-card">
-                    <h1>{item.name}</h1>
-                    <ItemCount/>
-                    <p>{item.price}</p>
-                    <p className="card-description">{item.description}</p>
-                </div>
-                </>
-            ) : (
-                "Cargando datos..."
-            )}
+function ItemDetail({
+    img,
+    category,
+    name,
+    description,
+    price,
+}) {
+    return (
+    <section className="itemDetail">
+        <article className="itemDetail-card">
+            <img className="itemDetail-img" src={img} alt="{name}" />
+            <div className="itemDetail-info">
+                <h1>{name}</h1>
+                <p className="itemDetail-category">{category}</p>
+                <ItemCount />
+                <p>{price}</p>
+                <p className="itemDetail-description">{description}</p>
+                <Link to={`/`}>
+                    <button>Volver</button>
+                </Link>
             </div>
-        </>
-        );
-    };
+        </article>
+    </section>
+    );
+}
 
-    export default ItemDetail;
+export default ItemDetail;

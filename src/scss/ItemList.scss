@@ -1,0 +1,20 @@
+.itemListContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	.title {
+		font-family: Georgia, 'Times New Roman', Times, serif;
+		font-size: 5rem;
+		font-weight: 700;
+		color: #fff;
+	}
+	.itemListContainer-container {
+		display: grid;
+		justify-content: center;
+		justify-items: center;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		width: 63%;
+		margin: 5rem auto;
+	}
+}

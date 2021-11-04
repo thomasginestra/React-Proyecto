@@ -1,22 +1,24 @@
 import ItemCount from '../ItemCount/ItemCount';
+import { Link } from 'react-router-dom';
 
 
-
-const Item = ({ productos }) => {
+function Item ({
+    img,
+    name,
+    price,
+}) {
 
     return (
-        <>
-            <div className="cardComponent">
-                <div className="imgCard">
-                    <img src={productos.img} alt="imagen de prueba" />
-                </div>
-                <h3>{productos.name}</h3>
-                <p>{productos.price}</p>
-                <ItemCount/>
-                <div className="addToCart">Agregar al carrito</div>
-                <button>Ver detalles</button>
+        <section className="item">
+            <div>
+                <img className="item-img" src={img} alt="{name}" />
             </div>
-        </>
+            <h3 className='item-title'>{name}</h3>
+            <ItemCount/>
+            <div>
+				<span className='item-price'>${(price)}</span>
+			</div>
+        </section>
     );
 }
 

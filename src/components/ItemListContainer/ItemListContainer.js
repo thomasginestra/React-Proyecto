@@ -1,37 +1,8 @@
-import { useEffect, useState } from "react";
-import ItemList from "../ItemList/ItemList";
-import Productos from "../Item/products.json";
+import ItemList from '../ItemList/ItemList';
+import { useParams } from 'react-router';
 
-
-const ItemListContainer = ({ greeting }) => {
-    const [products, setProducts] = useState(null);
-
-    const getData = (data) =>
-    new Promise((resolve, reject) => {
-    setTimeout(() => {
-        if (data) {
-        resolve(data);
-        } else {
-        reject("ERROR: Reject");
-        }
-    }, 1000);
-    });
-
-    useEffect(() => {
-        getData(Productos)
-        .then((res) => setProducts(res))
-        .catch((err) => console.log(err));
-    }, []);
-
-    return (
-        <div className="container-articles">
-        {products
-            ? products.map((producto) => (
-                <ItemList items={producto} key={producto.id} />
-            ))
-            : "Cargando..."}
-        </div>
-    );
-};
+function ItemListContainer({ gretting }) {
+	return <ItemList titulo={gretting} />;
+}
 
 export default ItemListContainer;
