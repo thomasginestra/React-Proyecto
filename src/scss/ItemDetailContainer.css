@@ -1,0 +1,21 @@
+.container-articles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 8rem auto 2rem auto;
+  font-family: Noto sans, sans-serif;
+  font-weight: 400;
+  max-width: 1366px;
+}
+
+.container-articles img {
+  width: 100%;
+  margin: auto;
+  padding: 10px;
+}
+/*# sourceMappingURL=ItemDetailContainer.css.map */

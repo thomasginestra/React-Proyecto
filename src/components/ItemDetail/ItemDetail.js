@@ -1,30 +1,38 @@
-import "./ItemDetail.css";
 import ItemCount from "../ItemCount/ItemCount";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
-function ItemDetail({
-    img,
-    category,
-    name,
-    description,
-    price,
-}) {
+const ItemDetail = ({ item }) => {
+    const [countCart, setCountCart] = useState(0);
+
+    const url = "https://raw.githubusercontent.com/thomasginestra/React-Proyecto/main/public/assets/media/";
+
+    const onAdd = (quantityToAdd) => {
+        setCountCart(quantityToAdd);
+        console.log(countCart);
+    };
+
     return (
-    <section className="itemDetail">
-        <article className="itemDetail-card">
-            <img className="itemDetail-img" src={img} alt="{name}" />
-            <div className="itemDetail-info">
-                <h1>{name}</h1>
-                <p className="itemDetail-category">{category}</p>
-                <ItemCount />
-                <p>{price}</p>
-                <p className="itemDetail-description">{description}</p>
-                <Link to={`/`}>
-                    <button>Volver</button>
+        <section className="card" data-key={item.id}>
+            {item ? (
+            <>
+            <img src={url + item.img} alt="" />
+            <div className="sub-card">
+                <Link to={`/item/${item.id}`} className="card-title">
+                    {item.name}
                 </Link>
-            </div>
-        </article>
-    </section>
+                <p className="card-description">{item.description}</p>
+                <p>{item.category}</p>
+                <div className="card-price">
+                    <span className="card-price-monto">${item.price}</span>
+                </div>
+                <ItemCount stock={item.stock} initial="1" onAdd={onAdd} id={item.id} />
+                </div>
+                </>
+                ) : (
+            "Cargando datos..."
+            )}
+        </section>
     );
 }
 

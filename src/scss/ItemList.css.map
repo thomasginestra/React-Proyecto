@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,gBAAgB,CAAC;EACb,KAAK,EAAE,IAAI;EACX,UAAU,EAAE,MAAM;CACrB",
+    "sources": [
+        "ItemList.scss"
+    ],
+    "names": [],
+    "file": "ItemList.css"
+}

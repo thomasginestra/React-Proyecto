@@ -1,0 +1,39 @@
+.addTest {
+  font-size: .8rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-style: none;
+  border-radius: 30px;
+  background-color: #09184f;
+  color: #fff;
+  padding: 0.7rem 0;
+  letter-spacing: 2px;
+  display: block;
+  width: 180px;
+  margin: 0.6rem auto;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.counter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.counter .btn-counter {
+  font-size: .8rem;
+  font-weight: 600;
+  border-style: none;
+  border-radius: 30px;
+  background-color: #09184f;
+  color: #fff;
+  width: 30px;
+  height: 30px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+/*# sourceMappingURL=ItemCount.css.map */

@@ -1,0 +1,14 @@
+.container-articles {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 8rem auto 2rem auto;
+    font-family: Noto sans, sans-serif;
+    font-weight: 400;
+    max-width: 1366px;
+    img {
+        width: 100%;
+        margin: auto;
+        padding: 10px;
+    }
+}

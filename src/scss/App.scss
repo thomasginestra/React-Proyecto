@@ -1,11 +1,14 @@
 @import "index";
 @import "Navbar";
-@import "ItemListContainer";
-@import "Item";
 @import "ItemDetailContainer";
+@import "ItemDetail";
 @import "ItemList";
+@import "Item";
+@import "ItemCount";
 
-* {
-    text-align: center;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
 }

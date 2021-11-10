@@ -1,24 +1,21 @@
-import ItemCount from '../ItemCount/ItemCount';
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
+function Item({ item }) {
 
-function Item ({
-    img,
-    name,
-    price,
-}) {
+    const url = "https://raw.githubusercontent.com/thomasginestra/React-Proyecto/main/public/assets/media/";
 
     return (
-        <section className="item">
-            <div>
-                <img className="item-img" src={img} alt="{name}" />
+        <article className="card" data-key={item.id}>
+            <img src={url + item.img} alt="" />
+            <div className="sub-card">
+                <Link to={`/item/${item.id}`} className="card-title">
+                    {item.name}
+                </Link>
+                <div className="card-price">
+                    <span className="card-price-monto">${item.price}</span>
+                </div>
             </div>
-            <h3 className='item-title'>{name}</h3>
-            <ItemCount/>
-            <div>
-				<span className='item-price'>${(price)}</span>
-			</div>
-        </section>
+        </article>
     );
 }
 

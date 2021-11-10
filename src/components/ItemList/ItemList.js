@@ -1,53 +1,38 @@
-import { useEffect, useState } from 'react';
-import Item from '../Item/Item';
-import Products from "../Item/products.json";
+import { useEffect, useState } from "react";
+import Productos from "../../data/products.json";
+import Item from "../Item/Item";
 
-function ItemList({ titulo, category }) {
-	const [products, setProducts] = useState([]);
+const ItemList = ({ title, category }) => {
+    const [products, setProducts] = useState([]);
 
-	const getData = (data) =>
-		new Promise((resolve, reject) => {
-			setTimeout(() => {
-				if (data) {
-					resolve(data);
-				} else {
-					reject('No se encontró nada');
-				}
-			}, 1500);
-		});
+    const getData = (data) =>
+    new Promise((resolve, reject) => {
+        setTimeout(() => {
+            if (data) {
+                resolve(data);
+            } else {
+                reject("No se encontró nada");
+            }
+        }, 1500);
+    });
 
-        useEffect(() => {
-            getData(Products)
-                .then((res) =>
-                    category
-                        ? setProducts(
-                                res.filter(
-                                    (product) => product.category === category
-                                ))
-                        : setProducts(Products)
-                )
-                .catch((err) => console.log(err));
-        }, [category]);
-        console.log(products.length);
+    useEffect(() => {
+        getData(Productos)
+        .then((res) => category
+        ? setProducts(res.filter((product) => product.category === category))
+        : setProducts(Productos)
+        )
+        .catch((err) => console.log(err));
+    }, [category]);
 
-        return (
-            <section className='itemListContainer'>
-                <h1 className='title'>{titulo}</h1>
-                <div className='itemListContainer-container'>
-                    {products.length ? (
-                        products.map((product) => (
-                            <Item
-                                key={product.id}
-                                id={product.id}
-                                img={product.img}
-                                name={product.name}
-                                price={product.price}
-                            />
-                        ))
-                    ) : ("Cargando...")}
-                </div>
-            </section>
-        );
-}
+    return (
+        <section className="container-articles">
+            <h1 className="container-title">{title ? title : category.replace(/-+/g, " ")}</h1>
+            {products.length
+            ? products.map((producto) => <Item item={producto} />)
+            : "Cargando..."}
+        </section>
+    );
+};
 
 export default ItemList;

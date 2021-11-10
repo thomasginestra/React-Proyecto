@@ -1,0 +1,55 @@
+.card {
+  width: 20%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  background-color: #fff;
+}
+
+.card:hover {
+  -webkit-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+}
+
+.sub-card {
+  padding: 20px 15px 10px 15px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.sub-card h1 {
+  text-align: center;
+}
+
+.card-title {
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.card-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #666;
+}
+
+.card-price-monto {
+  font-size: 1.2rem;
+  width: 100%;
+  text-align: left;
+  padding: 10px 0;
+  color: #09184f;
+  font-weight: 600;
+}
+/*# sourceMappingURL=Item.css.map */

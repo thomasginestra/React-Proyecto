@@ -64,7 +64,7 @@
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: 8rem auto 2rem auto;
-  font-family: "Montserrat", sans-serif;
+  font-family: Noto sans, sans-serif;
   font-weight: 400;
   max-width: 1366px;
 }
@@ -73,6 +73,16 @@
   width: 100%;
   margin: auto;
   padding: 10px;
+}
+
+.card-description {
+  font-size: 12px;
+  color: #3d3d3d;
+}
+
+.container-title {
+  width: 100%;
+  text-align: center;
 }
 
 .card {
@@ -94,6 +104,11 @@
   background-color: #fff;
 }
 
+.card:hover {
+  -webkit-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+}
+
 .sub-card {
   padding: 20px 15px 10px 15px;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
@@ -104,32 +119,49 @@
 }
 
 .card-title {
-  width: 100%;
-  display: block;
+  text-align: center;
   text-decoration: none;
   font-size: 1.2rem;
 }
 
-.card-category {
-  font-size: 14px;
-  color: #2c2c2c;
-}
-
 .card-price {
-  font-size: 1rem;
-  font-weight: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #666;
 }
 
 .card-price-monto {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   width: 100%;
-  color: #09184f;
+  text-align: left;
   padding: 10px 0;
+  color: #09184f;
   font-weight: 600;
 }
 
+.btn {
+  font-size: .8rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-style: none;
+  border-radius: 30px;
+  background-color: #09184f;
+  color: #fff;
+  padding: 0.7rem 0;
+  letter-spacing: 2px;
+  display: block;
+  width: 180px;
+  margin: 0.6rem auto;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
 * {
-  text-align: center;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
 }
 /*# sourceMappingURL=App.css.map */
