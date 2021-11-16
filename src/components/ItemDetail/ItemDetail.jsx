@@ -1,16 +1,12 @@
 import ItemCount from "../ItemCount/ItemCount";
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useState, useContext } from "react";
+import { CartContext } from "../../contexts/cart/CartContext";
 
 const ItemDetail = ({ item }) => {
-    const [countCart, setCountCart] = useState(0);
+    const { addToCart } = useContext(CartContext);
 
     const url = "https://raw.githubusercontent.com/thomasginestra/React-Proyecto/main/public/assets/media/";
-
-    const onAdd = (quantityToAdd) => {
-        setCountCart(quantityToAdd);
-        console.log(countCart);
-    };
 
     return (
         <section className="card" data-key={item.id}>
@@ -26,7 +22,7 @@ const ItemDetail = ({ item }) => {
                 <div className="card-price">
                     <span className="card-price-monto">${item.price}</span>
                 </div>
-                <ItemCount stock={item.stock} initial="1" onAdd={onAdd} id={item.id} />
+                <ItemCount item={item} stock={item.stock} initial="1" onAdd={addToCart} id={item.id} />
                 </div>
                 </>
                 ) : (

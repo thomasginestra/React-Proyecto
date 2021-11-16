@@ -16,22 +16,18 @@ const ItemList = ({ title, category }) => {
         }, 1500);
     });
 
-    useEffect(() => {
-        getData(Productos)
-        .then((res) => category
-        ? setProducts(res.filter((product) => product.category === category))
-        : setProducts(Productos)
-        )
-        .catch((err) => console.log(err));
-    }, [category]);
-
+useEffect(() => {
+    getData(Productos)
+    .then((res) => (category ? setProducts(res.filter((product) => product.category === category)) : setProducts(Productos)))
+    .catch((err) => console.log(err));
+}, [category]);
     return (
-        <section className="container-articles">
-            <h1 className="container-title">{title ? title : category.replace(/-+/g, " ")}</h1>
-            {products.length
-            ? products.map((producto) => <Item item={producto} />)
-            : "Cargando..."}
+        <>
+            <section className="container-articles">
+            {products.length ? <h1 className="container-title">{title}</h1> : null}
+            {products.length ? products.map((producto) => <Item item={producto} />) : "Cargando...."}
         </section>
+        </>
     );
 };
 

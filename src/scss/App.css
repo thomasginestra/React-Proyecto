@@ -54,6 +54,18 @@
   cursor: pointer;
 }
 
+#btn-carrito {
+  background: transparent;
+  border: none;
+}
+
+#counter {
+  position: absolute;
+  color: #ffca0a;
+  top: 20px;
+  right: 15px;
+}
+
 .container-articles {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -140,8 +152,9 @@
   font-weight: 600;
 }
 
-.btn {
+.addTest {
   font-size: .8rem;
+  cursor: pointer;
   text-transform: uppercase;
   font-weight: 600;
   border-style: none;
@@ -155,6 +168,29 @@
   margin: 0.6rem auto;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
+}
+
+.counter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.counter .btn-counter {
+  font-size: .8rem;
+  font-weight: 600;
+  border-style: none;
+  border-radius: 30px;
+  background-color: #09184f;
+  color: #fff;
+  width: 30px;
+  height: 30px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
 }
 
 * {
