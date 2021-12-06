@@ -1,0 +1,26 @@
+
+.counter-container {
+    position: relative;
+    span,
+    #counter {
+    font-family: var(--font-details);
+    user-select: none;
+    position: absolute;
+    background: #ffca0a;
+    width: 20px;
+    height: 20px;
+    font-size: 0.6rem;
+    font-family: system-ui;
+    border-radius: 50%;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -10px;
+    right: -7px;
+    font-weight: 900;
+    padding: 5px;
+    color: #09184f;
+    border: 1px solid #000000f7;
+    }
+}

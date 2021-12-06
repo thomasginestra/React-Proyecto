@@ -1,16 +1,23 @@
 
 import { useState, useContext } from "react";
 import { CartContext } from "../../contexts/cart/CartContext";
-const ItemCount = ({ stock, initial, item, showBtn = true }) => {
+const ItemCount = ({ initial, item, showBtn = true }) => {
 const [count, setCount] = useState(parseInt(initial));
-const { addToCart } = useContext(CartContext);
+const { addToCart, removeItem } = useContext(CartContext);
 
 const add = () => {
-    if (count < stock) {
-    setCount(count + 1);
-    if (!showBtn) {
+    if (showBtn) {
+    if (count < item.stock) {
+        setCount(count + 1);
+    } else {
+        console.log("Stock limite");
+    }
+    } else {
+    if (item.stock > 0) {
+        setCount(count + 1);
         addToCart(item, 1);
-        console.log("hola");
+    } else {
+        console.log("Stock limite");
     }
     }
 };
@@ -22,21 +29,29 @@ const remove = () => {
         addToCart(item, -1);
     }
     }
+    if (count === 1) {
+    removeItem(item);
+    }
 };
 
-const handleClick = () => {
+const addItem = () => {
+    console.log(count <= item.stock);
+    console.log(count);
+    console.log(item.stock);
+    if (count <= item.stock) {
     addToCart(item, count);
+    }
 };
 
 return (
     <>
-    <div className="counter-to-cart">
-        <button onClick={remove}>-</button>
+    <div className="counter">
+    <button className="btn-counter" onClick={remove}>-</button>
         <span>{count}</span>
-        <button onClick={add}>+</button>
+        <button className="btn-counter" onClick={add}>+</button>
     </div>
     {showBtn && (
-        <button className="add-to-cart" onClick={handleClick}>
+        <button className="add-to-cart" onClick={addItem}>
         Agregar al carrito
         </button>
     )}

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar from "./components/Navbar/Navbar";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
@@ -7,6 +7,7 @@ import { CartProvider } from "./contexts/cart/CartContext";
 import "./scss/App.scss";
 
 function App() {
+
   return (
     <CartProvider>
       <BrowserRouter>

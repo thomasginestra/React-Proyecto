@@ -25,7 +25,7 @@ useEffect(() => {
         <>
             <section className="container-articles">
             {products.length ? <h1 className="container-title">{title}</h1> : null}
-            {products.length ? products.map((producto) => <Item item={producto} />) : "Cargando...."}
+            {products.length ? products.map((producto) => <Item item={producto} key={producto.id} />) : "Cargando...."}
         </section>
         </>
     );

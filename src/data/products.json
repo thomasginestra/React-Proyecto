@@ -64,7 +64,7 @@
     },
     {
         "name" : "Campera Boca",
-        "price" : "1600",
+        "price" : 1600,
         "id" : "8",
         "category" : "campera hombre" ,
         "img" : "remera8.png",

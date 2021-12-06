@@ -22,7 +22,7 @@ const ItemDetail = ({ item }) => {
                 <div className="card-price">
                     <span className="card-price-monto">${item.price}</span>
                 </div>
-                <ItemCount item={item} stock={item.stock} initial="1" onAdd={addToCart} id={item.id} />
+                <ItemCount initial="0" item={item} />
                 </div>
                 </>
                 ) : (

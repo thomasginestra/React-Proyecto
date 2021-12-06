@@ -1,4 +1,4 @@
-.addTest {
+.add-to-cart {
   font-size: .8rem;
   cursor: pointer;
   text-transform: uppercase;
@@ -32,8 +32,8 @@
   border-radius: 30px;
   background-color: #09184f;
   color: #fff;
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   cursor: pointer;
