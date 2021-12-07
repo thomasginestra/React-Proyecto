@@ -5,14 +5,14 @@
         "App.scss",
         "_index.scss",
         "_Navbar.scss",
-        "ItemDetailContainer.scss",
-        "ItemDetail.scss",
-        "ItemList.scss",
-        "Item.scss",
-        "ItemCount.scss",
-        "CartWidget.scss",
-        "CartViewModal.scss",
-        "cartViewPayment.scss"
+        "_ItemDetailContainer.scss",
+        "_ItemDetail.scss",
+        "_ItemList.scss",
+        "_Item.scss",
+        "_ItemCount.scss",
+        "_CartWidget.scss",
+        "_CartViewModal.scss",
+        "_cartViewPayment.scss"
     ],
     "names": [],
     "file": "App.css"

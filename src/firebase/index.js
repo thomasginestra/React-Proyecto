@@ -1,7 +1,7 @@
 import { initializeApp } from "firebase/app";
 import { getFirestore} from "firebase/firestore";
 
-const firebaseConfig = {
+  const firebaseConfig = {
     apiKey: "AIzaSyDj6fopA18dSI1jJTsljdIgqdvWp3htnzE",
     authDomain: "boca-ecommerce.firebaseapp.com",
     projectId: "boca-ecommerce",

@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,iBAAiB,CAAC;EACd,SAAS,EAAE,IAAI;EACf,KAAK,EAAE,OAAe;CACzB",
-    "sources": [
-        "ItemDetail.scss"
-    ],
-    "names": [],
-    "file": "ItemDetail.css"
-}

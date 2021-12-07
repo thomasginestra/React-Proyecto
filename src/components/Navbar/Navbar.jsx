@@ -5,7 +5,7 @@ import React from 'react'
 function Navbar({ counter }) {
     return (
         <nav className="navbar">
-            <a className="nav-logo"><img className="logo" src="logolddlh.svg" alt="logo"/></a>
+            <Link className="nav-logo" to={`/`}><img className="logo" src="logolddlh.svg" alt="logo"/></Link>
             <ul className="nav-list">
                 <li><Link className="item" to={`/`}>Inicio</Link></li>
                 <li><Link className="item" to={`/comocomprar`}>Como Comprar</Link></li>
