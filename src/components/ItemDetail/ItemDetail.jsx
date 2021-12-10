@@ -1,15 +1,12 @@
 import ItemCount from "../ItemCount/ItemCount";
 import { Link } from "react-router-dom";
-import { useState, useContext } from "react";
-import { CartContext } from "../../contexts/cart/CartContext";
 
 const ItemDetail = ({ item }) => {
-    const { addToCart } = useContext(CartContext);
 
     const url = "https://raw.githubusercontent.com/thomasginestra/React-Proyecto/main/public/assets/media/";
 
     return (
-        <section className="card" data-key={item.id}>
+        <section className="card-detail" data-key={item.id}>
             {item ? (
             <>
             <img src={url + item.img} alt="" />

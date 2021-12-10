@@ -89,8 +89,27 @@
 }
 
 .card-description {
-  font-size: 12px;
+  font-size: 10px;
   color: #3d3d3d;
+}
+
+.card-detail {
+  width: 70%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  background-color: #fff;
 }
 
 .container-title {
@@ -782,6 +801,85 @@
   cursor: pointer;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+}
+
+:root {
+  --ghost-white: #f8f9fd;
+  --blue-boca: #09184f;
+  --grey-text: #292929;
+  --yellow-gold: #ffca0a;
+  --trans: all 0.5s ease-in-out;
+}
+
+footer {
+  background-color: var(--blue-boca);
+}
+
+#footer-banner {
+  padding: 0.5rem 0;
+}
+
+#footer-banner > div:nth-child(1) {
+  margin: 2rem;
+}
+
+#footer-banner {
+  color: #fff;
+  text-align: center;
+}
+
+#footer-banner h2 {
+  font-size: 2.4rem;
+  color: var(--yellow-gold);
+  padding-bottom: 10px;
+}
+
+footer > .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.text {
+  font-size: 0.9em;
+}
+
+.social-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.social-icons a {
+  color: var(--yellow-gold);
+  margin: 0 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 30px;
+  height: 30px;
+  font-size: 1.25rem;
+  -webkit-transition: var(--trans);
+  transition: var(--trans);
+}
+
+.social-icons a:hover {
+  color: #fff;
 }
 
 * {

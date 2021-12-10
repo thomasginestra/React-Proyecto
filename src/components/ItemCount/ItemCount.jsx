@@ -1,4 +1,3 @@
-
 import { useState, useContext } from "react";
 import { CartContext } from "../../contexts/cart/CartContext";
 const ItemCount = ({ initial, item, showBtn = true }) => {

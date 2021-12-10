@@ -1,4 +1,15 @@
 .card-description {
-    font-size: 12px;
+    font-size: 10px;
     color: rgb(61, 61, 61);
+}
+
+.card-detail {
+    width: 70%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    transition: 0.4s;
+    background-color: #fff;
 }

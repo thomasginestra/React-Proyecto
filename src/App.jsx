@@ -1,9 +1,9 @@
-import React, { useEffect } from "react";
 import Navbar from "./components/Navbar/Navbar";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
 import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer";
 import { CartProvider } from "./contexts/cart/CartContext";
+import Footer from "./components/Footer/Footer";
 import "./scss/App.scss";
 
 function App() {
@@ -23,6 +23,7 @@ function App() {
             <ItemListContainer />
           </Route>
         </Switch>
+        <Footer />
       </BrowserRouter>
     </CartProvider>
   );
