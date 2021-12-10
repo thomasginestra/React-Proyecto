@@ -11,13 +11,13 @@ const ItemDetail = ({ item }) => {
             <>
             <img src={url + item.img} alt="" />
             <div className="sub-card">
-                <Link to={`/item/${item.id}`} className="card-title">
+                <Link to={`/item/${item.id}`} className="card-title-detail">
                     {item.name}
                 </Link>
                 <p className="card-description">{item.description}</p>
-                <p>{item.category}</p>
-                <div className="card-price">
-                    <span className="card-price-monto">${item.price}</span>
+                <p className="card-category">{item.category}</p>
+                <div className="card-price-detail">
+                    <span className="card-price-monto-detail">${item.price}</span>
                 </div>
                 <ItemCount initial="0" item={item} />
                 </div>

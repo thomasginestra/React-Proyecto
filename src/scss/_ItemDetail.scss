@@ -1,5 +1,6 @@
 .card-description {
     font-size: 10px;
+    padding-top: 10px;
     color: rgb(61, 61, 61);
 }
 
@@ -12,4 +13,35 @@
     justify-content: space-between;
     transition: 0.4s;
     background-color: #fff;
+}
+
+.card-title-detail {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.card-price-detail {
+    display: flex;
+    color: #666;
+}
+
+.card-price-monto-detail {
+    font-size: 1.2rem;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    color: #09184f;
+    font-weight: 600;
+}
+
+.card-category{
+    text-transform: uppercase;
+    padding-top: 10px;
+}
+
+.counter {
+    padding-top: 50px;
 }
